@@ -1,0 +1,105 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Dark Azure Theme */
+  color-scheme: dark;
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  /* Slate 50 */
+  --text-secondary: #cbd5e1;
+  /* Slate 300 */
+  --text-muted: #64748b;
+  /* Slate 500 */
+
+  /* Backgrounds */
+  --bg-app: #0f172a;
+  /* Slate 900 - Dark Background */
+  --bg-card: #1e293b;
+  /* Slate 800 - Card Background */
+  --bg-sidebar: #0f172a;
+  /* Slate 900 */
+
+  /* Accents - The "Azure" Request */
+  --accent-primary: #0ea5e9;
+  /* Sky 500 - Primary Azure */
+  --accent-secondary: #0c4a6e;
+  /* Sky 900 - Deep Blue Backgrounds */
+  --accent-hover: #38bdf8;
+  /* Sky 400 - Lighter Blue */
+
+  /* Borders */
+  --border-color: #334155;
+  /* Slate 700 */
+
+  /* Global Assignments */
+  color: var(--text-primary);
+  background-color: var(--bg-app);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Typography Overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif;
+  /* Premium Heading Font */
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+  /* Buttons too */
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--accent-hover);
+}

@@ -1,0 +1,96 @@
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: var(--bg-sidebar);
+    /* Dark Slate 900 */
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.sidebar-header {
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    /* White title */
+    margin-bottom: 0.25rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.sidebar-role {
+    font-size: 0.875rem;
+    color: var(--accent-primary);
+    /* Azure role label */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.sidebar-link:hover {
+    background: rgba(14, 165, 233, 0.1);
+    /* Azure tint */
+    color: #fff;
+}
+
+.sidebar-link.active {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.2) 0%, rgba(14, 165, 233, 0.05) 100%);
+    color: var(--accent-primary);
+    border-left: 3px solid var(--accent-primary);
+    border-radius: 0 0.5rem 0.5rem 0;
+    /* Only round right side */
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.1);
+}
+
+.sidebar-icon {
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.sidebar-logout {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    background: rgba(239, 68, 68, 0.1);
+    color: #f87171;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.sidebar-logout:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: #fca5a5;
+    color: #fff;
+}
